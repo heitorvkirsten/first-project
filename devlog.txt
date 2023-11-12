@@ -1,7 +1,0 @@
-versao 6.0.1
-- organização das pastas
-- conteúdo em progresso
-
-versao 6.2.1
-- css de signup e login finalizado
-- em processo css do corpo principal
