@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Google Verified Calls</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+    * {
+      margin: -1px;
+    }
+
+    .motto-land {
+      background: white;
+      display: flex;
+      flex-direction: column;
+      font-family: Roboto;
+      position: relative;
+    }
+
+    .motto-img {
+      width: 100%;
+      height: 310px;
+      object-fit: cover;
+      object-position: 0% 20%;
+      z-index: 0;
+      position: relative;
+    }
+
+    .motto-text {
+      font-weight: lighter;
+      position: absolute;
+      top: 10%;
+      height: 180px;
+      margin: 50px;
+      width: 50%;
+      color: white;
+      text-align: start;
+      font-size: 40px;
+      text-align: justify;
+    }
+
+    .motto-bar {
+      background: red;
+      width: 100%;
+      height: 10px;
+      position: relative;
+      background: rgb(203, 34, 42);
+      background: radial-gradient(circle,
+          rgba(203, 34, 42, 1) 0%,
+          rgba(91, 0, 0, 1) 100%);
+    }
+
+    .button-tcred {
+      background: rgb(216, 14, 24);
+      margin: 0px 0px 0px 20px;
+      padding: 10px;
+      width: 180px;
+      border-radius: 20px;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .button-tcreddy {
+      background: rgb(216, 14, 24);
+      padding: 20px;
+      width: 180px;
+      border-radius: 20px;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .herodiv {
+      background: white;
+      box-sizing: border-box;
+      display: flex;
+      height: 450px;
+      flex-direction: column;
+      width: 50%;
+    }
+
+    .herodad {
+      display: flex;
+      flex-direction: row;
+      background: white;
+      box-sizing: border-box;
+      padding: 40px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .herodad h1 {
+      color: #CB222A;
+    }
+
+    .herodad * {
+      font-weight: lighter;
+    }
+
+    .card-div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin: 5% auto;
+    }
+
+    .card-div>div {
+      border: 10px solid #cb222a;
+      border-radius: 20px;
+      overflow: hidden;
+      box-sizing: border-box;
+      padding: 10px;
+      justify-content: space-between;
+      height: 100%;
+      width: 30%;
+      justify-content: center;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .card-div div div {
+      justify-content: space-between;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .card-div>* {
+      align-self: center;
+      display: flex;
+      font-size: 12px;
+    }
+
+    .card-div img {
+      width: 50px;
+      align-self: center;
+    }
+
+    .imagediv {
+      background: white;
+      display: flex;
+      padding: 20px;
+      margin: -1px;
+    }
+
+    .imagediv img {
+      height: auto;
+      width: 20%;
+      object-fit: cover;
+    }
+
+    .imagediv * {
+      font-weight: lighter;
+      align-self: center;
+    }
+
+    .imagediv a {
+      margin: 3% auto;
+    }
+
+    .imagediv h5 {
+      color: #CB222A;
+      align-self: flex-start;
+    }
+
+    .imagediv>div {
+      justify-content: space-around;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #lastimagediv {
+      height: 700px;
+      align-content: flex-start;
+      flex-direction: column;
+    }
+
+    #imgone {
+      width: 100%;
+    }
+
+    #imgtwo {
+      width: 100%;
+    }
+
+    #imgthree {
+      width: 100%;
+    }
+
+    #imgfour {
+      width: 100%;
+    }
+
+    #imgfive {
+      width: 100%;
+    }
+
+    #imgsix {
+      width: 100%;
+    }
+
+    #imgseven {
+      width: 100%;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="css/tc-headerfooter.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <script src="js/tc-headerfooter.js"></script>
+</head>
+
+<body class="grid-body">
+  <header class="top-nav">
+    <a href="landingpage.html">
+      <img src="img/whitelogo.png" alt="logo" />
+    </a>
+    <div id="navred" style="
+          background-color: #cb222a;
+          flex-grow: 1;
+          height: 10px;
+          border-radius: 15px;
+          margin: 10px;
+        "></div>
+    <nav class="mininav">
+      <a href="#"> Área do Cliente</a>
+      <a href="#"> Idioma </a>
+      <a href="#"> Whatsapp </a>
+    </nav>
+  </header>
+  <header class="bottom-nav">
+    <div class="dropdown-main">
+      <div class="dropdown-toggle">
+        <a href="landingpage.html"> Início </a>
+        <div class="dropdown-menu"></div>
+      </div>
+      <div class="dropdown-toggle">
+        <a href="Cpaas.html"> CpaaS </a>
+        <div class="dropdown-menu"></div>
+      </div>
+      <div class="dropdown-toggle">
+        <a href="2fa.html"> 2FA </a>
+        <div class="dropdown-menu"></div>
+      </div>
+      <div class="dropdown-toggle">
+        <a href="numeromascara.html"> Numero Máscara </a>
+        <div class="dropdown-menu"></div>
+      </div>
+      <div class="dropdown-toggle">
+        <a href="googleverifiedcalls.html"> Google Verified Calls </a>
+        <div class="dropdown-menu"></div>
+      </div>
+      <div class="dropdown-toggle">
+        <a href="smsprogramavel.html"> SMS Programável </a>
+        <div class="dropdown-menu"></div>
+      </div>
+    </div>
+    <div class="dropdown-toggle little-menu">
+      <a>
+        <img src="img/menu.png" style="height: 20px" />
+      </a>
+    </div>
+  </header>
+  <header class="bottom-nav" id="bottom-style-nav">
+    <div class="dropdown-main">
+      <div class="dropdown-toggle">
+        <a href="landingpage.html"> Início </a>
+        <div class="dropdown-menu"></div>
+      </div>
+      <div class="dropdown-toggle">
+        <a href="Cpaas.html"> CpaaS </a>
+        <div class="dropdown-menu"></div>
+      </div>
+      <div class="dropdown-toggle">
+        <a href="2fa.html"> 2FA </a>
+        <div class="dropdown-menu"></div>
+      </div>
+      <div class="dropdown-toggle">
+        <a href="numeromascara.html"> Numero Máscara </a>
+        <div class="dropdown-menu"></div>
+      </div>
+      <div class="dropdown-toggle">
+        <a href="googleverifiedcalls.html"> Google Verified Calls </a>
+        <div class="dropdown-menu"></div>
+      </div>
+      <div class="dropdown-toggle">
+        <a href="smsprogramavel.html"> SMS Programável </a>
+        <div class="dropdown-menu"></div>
+      </div>
+    </div>
+    <div class="dropdown-toggle little-menu">
+      <a>
+        <img src="img/menu.png" style="height: 20px" />
+      </a>
+    </div>
+  </header>
+  <!-- header section -->
+  <div class="motto-bar"></div>
+  <div class="herodad">
+    <div class="jumbotron">
+      <h1 class="display-4">Google Verified Calls</h1>
+      <hr class="my-4" />
+      <p>
+        Esse novo recurso do Google, exclusivo para telefones Android, permite
+        que empresas exibam para o cliente na hora da chamada sua marca,
+        logotipo e até mesmo o motivo da chamada. <br />
+        <br />
+
+        A Telecall é a primeira operadora de telecom no Brasil a oferecer esse
+        recurso do Google.
+      </p>
+      <p class="lead"></p>
+    </div>
+  </div>
+  <div class="media imagediv">
+    <img class="mr-3" src="img/25_gc.png" alt="Generic placeholder image" id="imgone" />
+  </div>
+  <div class="media imagediv">
+    <img class="mr-3" src="img/27_gc.png" alt="Generic placeholder image" id="imgthree" />
+  </div>
+  <div class="media imagediv">
+    <img class="mr-3" src="img/28_gc.png" alt="Generic placeholder image" id="imgfour" />
+  </div>
+  <div class="media imagediv">
+    <img class="mr-3" src="img/29_gc.png" alt="Generic placeholder image" id="imgfive" />
+  </div>
+  <div class="media imagediv">
+    <img class="mr-3" src="img/30_gc.png" alt="Generic placeholder image" id="imgsix" />
+  </div>
+  <div class="motto-bar"></div>
+  <!-- footer section -->
+  <footer style="position: relative">
+    <div class="upper-foot">
+      <img src="img/whitelogo.png" alt="telecall" />
+
+      <nav>
+        <a href="https://www.facebook.com/TelecallBr"> Facebook </a>
+        <a href="https://www.instagram.com/telecallbr/"> Instagram </a>
+        <a href="https://www.linkedin.com/company/telecall/"> Linkedin </a>
+      </nav>
+    </div>
+    <div class="bottom-foot">
+      <a href="https://www.telecall.com/institucional/">Institucional</a>
+      <a href="https://carreirastelecall.solides.jobs/">Carreiras</a>
+      <a href="https://www.telecall.com/contato/">Contato</a>
+      <a href="https://www.telecall.com/en/vendas/">Vendas</a>
+      <a href="https://www.telecall.com/faq/">FAQ</a>
+      <a href="https://www.telecall.com/politica-e-privacidade/">Política e Privacidade</a>
+    </div>
+    <div style="
+          background: #363030;
+          color: #bbbbbb;
+          border-top: 1px solid gray;
+          font-size: 8px;
+          padding: 20px;
+          display: flex;
+          justify-content: center;
+        ">
+      <div>Copyright © 2018 Telecall. Todos os direitos reservados</div>
+    </div>
+  </footer>
+</body>
+
+</html>

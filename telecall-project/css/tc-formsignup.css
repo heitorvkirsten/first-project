@@ -1,0 +1,60 @@
+form {
+    background: white;
+    padding: 50px;
+    height: 350px;
+    align-self: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form-container {
+    height: 350px;
+    margin-top: 5vh;
+    flex-direction: row;
+    width: 600px;
+
+}
+
+.inputdiv {
+    margin: 10px;
+}
+
+body {
+    position: relative;
+    height: 100%;
+}
+
+
+.above-logo {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    align-self: center;
+    width: 20%;
+}
+
+.red-side {
+    background: rgb(203, 34, 42);
+    background: linear-gradient(180deg, rgba(203, 34, 42, 1) 0%, rgba(91, 0, 0, 1) 100%);
+    padding: 50px;
+    width: 100px;
+    height: 100%;
+    align-self: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login-container {
+    height: 100px;
+    margin-top: 5vh;
+    width: 600px;
+}
+.login-container > *{
+    height:100px;
+}
+.side-flex{
+    display: flex;
+    flex-grow: 1;
+}

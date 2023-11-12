@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>login in</title>
+  <style>
+    /* body elements css*/
+
+    form {
+      background: white;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      flex-grow: 2;
+      width: 100%;
+      padding: 30px;
+    }
+
+    .form-container {
+      margin: 0 auto;
+      width: 80%;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      border: 3px solid #037cff;
+      box-sizing: border-box;
+      object-fit: contain;
+      box-shadow: 10px 10px 30px #939393;
+    }
+
+    .form-container * {
+      box-sizing: border-box;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    .above-logo {
+      align-self: center;
+      width: 30%;
+    }
+
+    .red-side {
+      background: rgb(203, 34, 42);
+      background: linear-gradient(180deg,
+          rgba(203, 34, 42, 1) 0%,
+          rgba(91, 0, 0, 1) 100%);
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-content: flex-start;
+      flex-grow: 1;
+      padding: 0px 30px;
+      width: 400px;
+      flex-direction: column;
+      font-size: 40px;
+      color: white;
+      font-weight: lighter;
+    }
+
+    .red-side a {
+      border: none;
+      background: none;
+      color: white;
+      font-weight: lighter;
+      width: 100%;
+      text-align-last: left;
+      font-size: 20px;
+    }
+
+    .inputdiv {
+      margin: 5px;
+      position: relative;
+    }
+
+    .inputdiv label {
+      position: relative;
+      top: 22px;
+      left: 10px;
+      /* Adjust this value to position the label */
+      z-index: 2;
+      font-size: 0.7rem;
+      height: 0;
+    }
+
+    .inputdiv input {
+      height: 50px;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 15px 20px 0px 20px;
+      border: 1px solid #31343b;
+      z-index: 1;
+    }
+
+    .inputradio {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .inputradio label {
+      top: 0;
+      left: 0;
+    }
+
+    #m,
+    #f,
+    #o {
+      top: 0;
+      right: -15px;
+    }
+
+    .submitbtn {
+      color: white;
+      background: rgb(203, 34, 42);
+      background: linear-gradient(180deg,
+          rgba(203, 34, 42, 1) 0%,
+          rgba(91, 0, 0, 1) 100%);
+      height: 70px;
+      width: 50%;
+      border-radius: 40px;
+      border: none;
+    }
+
+    input:hover,
+    input:active {
+      border: 2px solid #cb1c2b;
+    }
+
+    .submitbtn:active {
+      background: #037cff;
+    }
+
+    a:hover,
+    .inputdiv:hover label {
+      background: none;
+      color: #037cff;
+    }
+
+    #alertdiv {
+      font-weight: lighter;
+      font-size: 10px;
+      margin: 0 auto;
+    }
+
+    .lastdiv {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="css/tc-headerfootersg.css" />
+</head>
+
+<body>
+  <header class="top-nav">
+    <a href="landingpage.html" class="nodisplay"><img src="img/whitelogo.png" alt="logo" /></a>
+    <div id="navred" style="
+          background-color: #cb222a;
+          flex-grow: 1;
+          height: 10px;
+          border-radius: 15px;
+          margin: 10px;
+        "></div>
+  </header>
+
+  <div class="form-container" style="display: flex; align-self: center">
+    <form class="side-flex" action="landingpage.html">
+      <img src="img/logologo.png" class="above-logo" />
+      <div class="inputdiv">
+        <label id="labelusuarioone"> Login: </label><input type="email" id="usuario" oninput="maiuscula(this)" />
+      </div>
+      <div class="inputdiv">
+        <label id="labelsenhatwo"> Senha: </label><input type="password" id="pass" />
+      </div>
+      <div class="lastdiv" style="height: 60px;display: flex;align-items: center;">
+        <div id="alertdiv"></div>
+      </div>
+      <input type="submit" value="Entrar" class="submitbtn" id="ebtn" />
+    </form>
+    <div class="red-side">
+      Não tem uma conta?
+      <a href="signin.html">Cadastre-se</a>
+    </div>
+  </div>
+  <div id="privacy-div">
+    Copyright © 2018 Telecall. Todos os direitos reservados
+    &#183;
+    <a href="https://telecall.com/politica-e-privacidade/">Política de privacidade</a>
+  </div>
+
+  <script src="../telecall-project/js/login.js"></script>
+</body>
+
+</html>

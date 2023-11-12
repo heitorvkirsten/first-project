@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  margin: 0px;
+  font-family: Roboto, Sans-Serif;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url("peakbg.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+}
+
+.top-nav {
+  padding: 0px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  height: 90px;
+  border-bottom: 1px solid white;
+}
+
+.top-nav img {
+  height: 40px;
+  margin: 40px;
+}
+
+#navred {
+  background: rgb(203, 34, 42);
+  background: radial-gradient(
+    circle,
+    rgba(203, 34, 42, 1) 0%,
+    rgba(91, 0, 0, 1) 100%
+  );
+}
+.top-nav nav {
+  margin: 0px 20px 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.dropdown-toggle a {
+  font-weight: lighter;
+}
+.dropdown-main {
+  position: relative;
+  left: 10%;
+  justify-content: space-evenly;
+  display: flex;
+  gap: 100px;
+}
+.bottom-nav {
+  background: #1e1e1e;
+  height: 60px;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  border-bottom: 1px solid white;
+}
+
+.little-menu {
+  position: relative;
+  right: 5%;
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.upper-foot {
+  border-bottom: 1px solid white;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.upper-foot img {
+  flex-shrink: 0;
+  height: 30px;
+  margin: 30px;
+}
+
+.upper-foot nav {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  width: 30%;
+}
+
+.bottom-foot {
+  height: 10px;
+  justify-content: space-evenly;
+  display: flex;
+  width: 100%;
+  padding: 50px 0px 50px 0px;
+}
+
+.bottom-foot a {
+  font-weight: normal;
+  color: #bbbbbb;
+}
+
+.nodisplay {
+  display: none;
+}
+
+#privacy-div, #privacy-div * {
+  color: black;
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 12px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+/* keyframe smooth*/
+
+
+@keyframes fade{
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 100%;
+	}
+}
+
+html {
+	animation: fade 1s;
+}
+

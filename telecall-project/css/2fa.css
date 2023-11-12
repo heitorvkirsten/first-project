@@ -1,0 +1,136 @@
+/* Style the links inside the sidenav */
+#mySidenav a {
+  position: fixed;
+  /* Position them relative to the browser window */
+  right: -100px;
+  /* Position them outside of the screen */
+  transition: 0.3s;
+  /* Add transition on hover */
+  padding: 15px;
+  /* 15px padding */
+  width: 100px;
+  /* Set a specific width */
+  text-decoration: none;
+  /* Remove underline */
+  list-style-type: disc;
+  font-size: 20px;
+  /* Increase font size */
+  color: rgb(168, 168, 168);
+  /* White text color */
+  border-radius: 5px 5px 5px 5px;
+  /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  right: 0;
+  /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+  list-style-type: dot;
+  top: 220px;
+  background-color: #222121;
+}
+
+#blog {
+  top: 255px;
+  background-color: #222121;
+  /* Blue */
+}
+
+#projects {
+  top: 290px;
+  background-color: #222121;
+  /* Red */
+}
+
+#contact {
+  top: 325px;
+  background-color: #222121
+    /* Light Black */
+}
+
+.transp {
+  height: 30px;
+}
+
+.container {
+  margin: auto;
+  width: 97%;
+  border-radius: 5px 5px 5px 5px;
+  border-bottom: blue;
+  background-color: #a3a3a3;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+
+.pretitulo {
+  border-radius: 15px 15px 15px 15px;
+  font-size: 50px;
+  background-color: #6d3131;
+  margin: auto;
+  width: 50%;
+  border: 3px solid rgb(255, 33, 33);
+  padding: 10px;
+
+}
+
+.inicio {
+
+  height: 300px;
+  padding-top: 50px;
+  margin: auto;
+  width: 97%;
+  border-radius: 5px 5px 5px 5px;
+  border-bottom: blue;
+  background-color: #4e4d4d;
+  height: 300px;
+  padding-top: 50px;
+  border-radius: 15px 15px 15px 15px;
+  font-size: 30px;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.capa {
+  height: auto;
+  width: 1100px;
+  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+.description {
+  margin: auto;
+  width: 97%;
+  border-radius: 5px 5px 5px 5px;
+  border-bottom: blue;
+  background-color: #4e4d4d;
+  height: 300px;
+  padding-top: 50px;
+  border-radius: 15px 15px 15px 15px;
+  font-size: 30px;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+
+}
+.tile2{
+  height: auto;
+  width: 50px;
+  float: top;
+  
+}
+
+.img_inform{
+
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
